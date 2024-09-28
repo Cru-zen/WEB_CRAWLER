@@ -1,6 +1,6 @@
 use dashmap::{DashMap, DashSet};
 use tracing::info;
-// use serde_json::Error as SerdeError;
+use serde_json::Error as SerdeError;
 
 pub struct Index {
     pub inner: DashMap<String, DashSet<String>>,
